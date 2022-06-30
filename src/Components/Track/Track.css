@@ -1,7 +1,10 @@
 .Track {
-    display: flex;
     align-items: center;
     border-bottom: 1px solid rgba(256, 256, 256, 0.8);
+    margin: 15px 0;
+    height: clamp(80px, 100px, 150px);
+    display: flex;
+    justify-content: center;
   }
   
   .Track-action {

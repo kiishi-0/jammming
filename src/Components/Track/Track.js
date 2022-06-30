@@ -19,7 +19,6 @@ class Track extends React.Component {
     }
     addTrack(){
         this.props.onAdd(this.props.track);
-        console.log('done')
     }
     render(){
         return (
@@ -28,7 +27,7 @@ class Track extends React.Component {
                 <h3>{this.props.track.name}</h3>
                 <p>{this.props.track.artist} | {this.props.track.album}</p>
             </div>
-            <button className="Track-action" >{this.renderAction()}</button>
+            <div className="Track-action" >{this.renderAction()}</div>
             </div>
         )
     }
